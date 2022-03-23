@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BC25_BTVN_JS_BUOI5_Hồ Công Đức</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container" style="text-align: center;">
+        <hr>
+        <h1>BÀI TẬP VỀ NHÀ JS BUỔI 5</h1>
+        <hr>
+        <!-- BÀI 1  -->
+        <div>
+            <div class="card">
+                <div class="card-header" style="background-color: aquamarine;">
+                    BÀI 1: TÍNH ĐIỂM THI VÀ KẾT QUẢ THI
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                      <input type="text" id="txtToan" class="form-control" placeholder="Điểm thi môn Toán:">
+                      <input type="text" id="txtLy" class="form-control" placeholder="Điểm thi môn Lý:">
+                      <input type="text" id="txtHoa" class="form-control" placeholder="Điểm thi môn Hoá:">
+                      <hr>
+                      <div class="form-group">
+                        <label for="">Đối tượng: </label>
+                        <select class="form-control" id="slDoiTuong">
+                          <option value="2.5">Đối tượng loại 1</option>
+                          <option value="1.5">Đối tượng loại 2</option>
+                          <option value="1">Đối tượng loại 3</option>
+                          <option value="0">Không thuộc đối tượng nào</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="">Khu vực: </label>
+                        <select class="form-control" id="slKhuVuc">
+                          <option value="2">Khu vực 1</option>
+                          <option value="1">Khu vực 3</option>
+                          <option value="0.5">Khu vực 3</option>
+                          <option value="0">Không thuộc Khu vực nào</option>
+                        </select>
+                      </div>
+                      <input type="text" id="txtDiemChuan" class="form-control" placeholder="Điểm chuẩn của Hội đồng:">
+                    </div>
+                    <button id="btnTinhDiemThi" class="btn btn-success">Tính điểm thi</button>
+                </div>
+                <div id="divThongBaoDiemThi" class="card-footer text-muted" style="background-color: aquamarine;">
+                    
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- BÀI 2  -->
+        <div>
+            <div class="card mt-5">
+              <div class="card-header" style="background-color:antiquewhite">
+                BÀI 2: TÍNH TIỀN ĐIỆN
+              </div>
+              <div class="card-body">
+                  <div class="form-group">
+                    <label for="">Nhập tên:</label>
+                    <input type="text" id="txtTen" class="form-control">
+                    <label for="">Nhập số điện tiêu thụ:</label>
+                    <input type="text" id="txtDienTieuThu" class="form-control">
+                  </div>
+                  <button id="btnTinhTienDien" class="btn btn-success">Tính tiền điện!</button>
+              </div>
+              <div id="divThongBaoTienDien" class="card-footer text-muted" style="background-color:antiquewhite">
+              </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- BÀI 3  -->
+        <div>
+            <div class="card mt-5">
+              <div class="card-header" style="background-color:beige">
+                BÀI 3: TÍNH THUẾ THU NHẬP CÁ NHÂN
+              </div>
+              <div class="card-body">
+                  <div class="form-group">
+                    <label for="">Họ & tên:</label>
+                    <input type="text" id="txtHoTen" class="form-control">
+                    <label for="">Tổng thu nhâp năm:</label>
+                    <input type="text" id="txtTongThuNhap" class="form-control">
+                    <label for="">Số người phụ thuộc:</label>
+                    <input type="text" id="txtSoNguoiPhuThuoc" class="form-control">
+                  </div>
+                  <button id="btnTinhThue" class="btn btn-success">Tính thuế!</button>
+              </div>
+              <div id="divThongBaoTienThue" class="card-footer text-muted" style="background-color:beige">
+              </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- BÀI 3  -->
+        <div class="mb-5">
+          <div class="card mt-5">
+            <div class="card-header" style="background-color: black; color:aliceblue;">
+              BÀI 4: TÍNH TIỀN CÁP
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                  <label for="">Mã khách hàng:</label>
+                  <input type="text" id="txtMaKH" class="form-control">
+                  <div class="form-group">
+                    <label for="">Loại khách hàng: </label>
+                    <select class="form-control" id="slLoaiKH">
+                      <option value="1">Nhà dân</option>
+                      <option value="2">Doanh nghiệp</option>
+                    </select>
+                  </div>
+                  <label for="">Số kết nối:</label>
+                  <input type="text" id="txtSoKetNoi" class="form-control">
+                  <label for="">Số kênh cao cấp:</label>
+                  <input type="text" id="txtSoKenhCaoCap" class="form-control">
+                </div>
+                <button id="btnTinhTienCap" class="btn btn-success">Tính thuế!</button>
+            </div>
+            <div id="divThongBaoTienCap" class="card-footer text-muted" style="background-color: black; color:aliceblue;">
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
